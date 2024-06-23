@@ -6,15 +6,15 @@
 
 # Features:
 
--User Authentication: Ops Users and Client Users can create accounts and log in.
+- User Authentication: Ops Users and Client Users can create accounts and log in.
 
--File Upload: Ops Users can upload files, limited to .pptx, .docx, and .xlsx formats.
+- File Upload: Ops Users can upload files, limited to .pptx, .docx, and .xlsx formats.
 
--Email Verification: Client Users receive an email verification link upon sign-up.
+- Email Verification: Client Users receive an email verification link upon sign-up.
 
--Secure File Download: Client Users can download files with secure, encrypted URLs.
+- Secure File Download: Client Users can download files with secure, encrypted URLs.
 
--File Listing: Client Users can view a list of all uploaded files.
+- File Listing: Client Users can view a list of all uploaded files.
 
 # Installation and Setup
 
@@ -26,7 +26,7 @@
 
 # Testing
 
-**To run the included test cases, use the following command : python manage.py test
+- To run the included test cases, use the following command : python manage.py test
 
 # Deployment
 
@@ -40,4 +40,4 @@ Deploying your Secure File Sharing System to a production environment involves a
 6. ssl/tls certificates. (encrypt the data and secure the sites)
 
 PS:
--Dev. env :- I used github codespaces (cloud-based development environment integrated with github) for development of this project.
+- Dev. env :- I used github codespaces (cloud-based development environment integrated with github) for development of this project.
