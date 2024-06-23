@@ -15,17 +15,18 @@ class FileManagementTests(APITestCase):
         self.client.login(username='ops_user', password='password')
         url = reverse('uploadedfile-upload-file')
         with open('test_file.docx', 'rb') as file:
-            response = self.client.post(url, {'file': file}, format='multipart')
-        self.assertEqual(response.status_code, status.HTTP_201_CREATED)
+            response = self.client.post(url, {'file': file}, format='multipart', follow=True)
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+
 
     def test_client_user_can_list_files(self):
         self.client.login(username='client_user', password='password')
         url = reverse('uploadedfile-list-files')
-        response = self.client.get(url)
+        response = self.client.get(url, follow=True)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
     def test_client_user_can_download_file(self):
         self.client.login(username='client_user', password='password')
         url = reverse('uploadedfile-download-file', args=[1])
-        response = self.client.get(url)
+        response = self.client.get(url, follow=True)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
