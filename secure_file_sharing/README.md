@@ -40,4 +40,4 @@ Deploying your Secure File Sharing System to a production environment involves a
 6. ssl/tls certificates. (encrypt the data and secure the sites)
 
 PS:
-- Dev. env :- I used github codespaces (cloud-based development environment integrated with github) for development of this project.
+- I used github codespaces (cloud-based development environment integrated with github) for development of this project.
